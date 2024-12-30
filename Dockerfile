@@ -36,8 +36,6 @@ RUN python3 setup.py build_ext --inplace -j 8 && \
 # Build final image using artifacts from builder
 FROM continuumio/miniconda3:latest AS release
 
-# Dockerfile author / maintainer
-LABEL maintainer="Fede Cardoso @dardonacci <federico@hummingbot.org>"
 
 # Build arguments
 ARG BRANCH=""
